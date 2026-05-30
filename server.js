@@ -1,10 +1,15 @@
 const http = require("http");
-const { greetings } = require("./hello-world");
-{greetings}
+const fs = require("fs")
+
 const server = http.createServer((req,res)=>{
 
+  res.writeHead(200, {
+    'Content-Type': 'text/html'
+  });
+
+  res.end('<h1>Hello Node!!!!</h1>\n');
 });
 
-server.listen(3000, () => {
-   greetings()
+server.listen(3000, '127.0.0.1', () => {
+  console.log('Listening on http://127.0.0.1:3000');
 });

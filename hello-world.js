@@ -1,5 +1,7 @@
-function greetings () {
-    console.log("HELLO WORLD")
+function greetings() {
+    console.log("HELLO WORLD");
 }
 
-module.exports = {greetings};
+if (require.main === module) greetings();
+
+module.exports = { greetings };
