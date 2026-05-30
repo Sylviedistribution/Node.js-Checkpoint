@@ -70,9 +70,3 @@ node email-sender.js
 - Never commit real credentials or personal data. `email-sender.js` is configured to read credentials from environment variables.
 - Use an app-specific password (Gmail) or a disposable test account for experiments.
 
-## Notes
-
-- If the server fails to start because port 3000 is already in use, find the process using the port and stop it (for example with `netstat` + `taskkill` on Windows).
-- These files are intentionally small and instructional — feel free to extend them for practice.
-
-If you want, I can also: add a `.env` example, change the server port, or create unit tests — which would you prefer next?
